@@ -2,12 +2,10 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from pprint import pprint
 
-client_credentials_manager = SpotifyClientCredentials(client_id = "c66823cbec64401293a66054c2fbce21", client_secret = "6aa3961e24654e51a966f0b4800f60c9")
+client_credentials_manager = SpotifyClientCredentials(client_id = "XXX", client_secret = "XXX")
 sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 
-# paste link here: https://open.spotify.com/playlist/69N5GrdsCrd9l7iqpcoLc7?si=5b398ccd993547a9
-
-pl_id = 'spotify:playlist:2cRhVlh3JXpGnhYH3cHIlr'
+pl_id = 'spotify:playlist:XXX'
 offset = 0
 
 while True:
