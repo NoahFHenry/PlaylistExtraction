@@ -1,0 +1,9 @@
+#! Get OAuth token from: https://developer.spotify.com/console/get-audio-features-track/
+#! Click "Get Token" and copy the string after "Bearer" from the curl console into your script
+
+array=( TRACK IDs HERE )
+
+for i in "${array[@]}"
+do
+curl -X "GET" "https://api.spotify.com/v1/audio-features/$i" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer COPY_TOKEN_HERE"
+done

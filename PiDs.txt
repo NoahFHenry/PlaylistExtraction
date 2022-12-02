@@ -1,8 +1,0 @@
-#! /bin/bash
-
-array=( TRACK IDs HERE )
-
-for i in "${array[@]}"
-do
-curl -X "GET" "https://api.spotify.com/v1/audio-features/$i" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer OAUTH TOKEN HERE"
-done
